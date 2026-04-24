@@ -103,42 +103,22 @@ flutter build apk --release --dart-define=GEMINI_API_KEY=your_key
 
 ```
 lib/
-├── main.dart                    # App entry + bottom nav shell
+├── main.dart                   
 ├── theme/
-│   └── app_theme.dart           # Design system (colors, typography, gradients)
+│   └── app_theme.dart           
 ├── models/
-│   └── expense.dart             # Isar DB models (Expense, MonthlyReport)
+│   └── expense.dart             
 ├── services/
-│   └── ai_service.dart          # All Gemini AI integrations
+│   └── ai_service.dart         
 ├── screens/
-│   ├── dashboard_screen.dart    # Main overview
-│   ├── add_expense_screen.dart  # Add/scan expense
-│   ├── reports_screen.dart      # Monthly CFO report
-│   └── cfo_chat_screen.dart     # AI chat interface
+│   ├── dashboard_screen.dart    
+│   ├── reports_screen.dart      
+│   └── cfo_chat_screen.dart   
 └── widgets/
-    ├── glass_card.dart          # Reusable card component
-    ├── stat_chip.dart           # Quick action chips
-    └── spending_ring.dart       # Donut chart widget
+    ├── glass_card.dart          
+    ├── stat_chip.dart          
+    └── spending_ring.dart       
 ```
-
----
-
-## 🎨 Design System
-
-**Aesthetic:** Luxury Dark — Deep midnight blacks with electric gold accents
-
-| Token | Value |
-|---|---|
-| Background | `#0A0A0F` |
-| Surface | `#12121A` |
-| Card | `#1E1E2E` |
-| Gold | `#E8B84B` |
-| Teal | `#00D4AA` |
-| Display Font | Cormorant Garamond |
-| UI Font | Space Grotesk |
-| Body Font | Inter |
-
----
 
 ## 💡 Startup Potential
 
@@ -147,19 +127,6 @@ lib/
 - **Integrations:** Razorpay, Stripe, GST portal, Tally
 - **Moat:** AI learns your business spending personality over time
 - **Expansion:** Team expenses, multi-currency, accountant access
-
----
-
-## 🔧 Production Additions (Next Steps)
-
-- [ ] Isar database integration (replace in-memory list)
-- [ ] Firebase Auth (phone OTP for Indian users)
-- [ ] Razorpay subscription billing
-- [ ] GST report generation (PDF export)
-- [ ] WhatsApp receipt forwarding
-- [ ] Multi-business account support
-- [ ] Tally & Zoho Books integration
-- [ ] Widget for home screen spending summary
 
 ---
 
